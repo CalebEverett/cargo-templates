@@ -32,10 +32,3 @@ solana-sdk = "1.8.0"
 spl-token = { version = "3.2", features = [ "no-entrypoint" ] }
 spl-memo = { version = "3.0.1", features = ["no-entrypoint"] }
 
-# [package]
-
-# version = "0.1.0"
-
-# edition = "2018"
-# license = "Apache-2.0"
-# repository = "https://github.com/{{github-user}}/solana-program-library"
