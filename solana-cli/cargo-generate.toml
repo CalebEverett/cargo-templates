@@ -1,0 +1,4 @@
+[placeholders.github-user]
+type = "string"
+prompt = "Github user name?"
+default = "CalebEverett"
