@@ -82,7 +82,7 @@ pub(crate) fn check_fee_payer_balance(config: &Config, required_balance: u64) ->
 
 fn main() {
     let default_decimals = &format!("{}", native_mint::DECIMALS);
-    let mut no_wait = false;
+    let no_wait = false;
     let app_matches = App::new(crate_name!())
         .about(crate_description!())
         .version(crate_version!())
@@ -131,13 +131,6 @@ fn main() {
                 .takes_value(true)
                 .possible_values(&["json", "json-compact"])
                 .help("Return information in specified output format"),
-        )
-        .arg(
-            Arg::with_name("dry_run")
-                .long("dry-run")
-                .takes_value(false)
-                .global(true)
-                .help("Simulate transaction instead of executing"),
         )
         .arg(fee_payer_arg().global(true))
         .subcommand(

@@ -5,6 +5,7 @@ use solana_account_decoder::parse_token::UiTokenAmount;
 use solana_cli_output::{OutputFormat, QuietDisplay, VerboseDisplay};
 use std::fmt;
 
+#[allow(dead_code)]
 static WARNING: Emoji = Emoji("⚠️", "!");
 
 pub(crate) fn println_display(config: &Config, message: String) {
